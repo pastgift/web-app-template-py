@@ -56,7 +56,7 @@ See `requirements.txt`
 
 |       Name     |                Description                |                Default                 |
 |----------------|-------------------------------------------|----------------------------------------|
-| ADMIN_EMAIL    | Admin email                               |                                        |
+| ADMIN_USERNAME | Admin username                            |                                        |
 | SECRET_KEY     | Flask secret key                          | `h3bF9paWv9nNfAEo`                     |
 | WAT_DB_DEV_URL | Database connection URL                   | `sqlite:///current-path/db-dev.sqlite` |
 | WAT_DB_URL     | Database connection URL For Production    | `sqlite:///current-path/db.sqlite`     |
@@ -70,9 +70,9 @@ python manage.py initdb
 
 ## Default Admin User
 
-|     Email      |   Name  | Password |
-|----------------|---------|----------|
-| `$ADMIN_EMAIL` | `admin` | `admin!` |
+|     Email         |   Name  | Password |
+|-------------------|---------|----------|
+| `$ADMIN_USERNAME` | `admin` | `admin!` |
 
 ## Run for development
 
