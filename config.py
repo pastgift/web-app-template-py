@@ -29,9 +29,7 @@ class Config(object):
     def init_app(cls, app):
         from werkzeug.contrib.fixers import ProxyFix
         app.wsgi_app = ProxyFix(app.wsgi_app)
-
-        print 'Admin Username is ', app.config.get('ADMIN_USERNAME')
-
+		
 class DevelopmentConfig(Config):
     DEBUG = True
     SQLALCHEMY_DATABASE_URI = os.environ.get('WAT_DB_DEV_URL') or \

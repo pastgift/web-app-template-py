@@ -9,7 +9,7 @@ from flask.ext.login import UserMixin, AnonymousUserMixin
 from werkzeug.security import generate_password_hash, check_password_hash
 from itsdangerous import TimedJSONWebSignatureSerializer as Serializer
 
-from app.exceptions import ValidationError
+from server.exceptions import ValidationError
 from . import db, login_manager
 
 class User(db.Model):

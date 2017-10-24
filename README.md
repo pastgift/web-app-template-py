@@ -77,13 +77,13 @@ python manage.py initdb
 ## Run for development
 
 ```shell
-./run-dev.sh
+./manage.py runserver -h localhost -p 9999
 ```
 
 ## Run for production
 
 ```shell
-./run-deploy.sh
+gunicorn -b localhost:8000 -c gunicorn.conf manage:app
 ```
 
 ## Run for production in supervisord

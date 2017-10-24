@@ -1,3 +1,4 @@
+#!/usr/bin/python
 # -*- coding: utf-8 -*-
 
 import os
@@ -14,8 +15,8 @@ for p in ADDITIONAL_PACKAGE_PATH:
     if package_abs_path not in sys.path:
         sys.path.append(package_abs_path)
 
-from app import create_app, db
-from app.models import User, UserAcl, OperationRecord
+from server import create_app, db
+from server.models import User, UserAcl, OperationRecord
 
 from flask.ext.script import Manager, Shell
 

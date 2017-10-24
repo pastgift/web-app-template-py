@@ -14,9 +14,9 @@ moment    = Moment()
 babel      = Babel()
 
 login_manager = LoginManager()
-login_manager.session_protection = 'strong'
-login_manager.login_view = 'site_auth.login'
-login_manager.login_message = _('Please login')
+login_manager.session_protection     = 'strong'
+login_manager.login_view             = 'site_auth.login'
+login_manager.login_message          = _('Please login')
 login_manager.login_message_category = 'danger'
 
 def create_app(config_name):
